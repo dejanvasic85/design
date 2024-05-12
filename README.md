@@ -1,20 +1,16 @@
-# create-svelte
+# My Design System
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is a fun project for learning how to create a design system using CSS and Svelte. The intention is to create some base styles (CSS) and components (Svelte) that can be used in other projects. Leveraging headless components like [Bits UI](https://www.bits-ui.com/docs/introduction)
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+## Features
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- [x] CSS Reset
+- [x] Colours
+- [ ] Typography
+- [ ] Layout and spacing
+- [ ] Forms
+- Components (using [Bits UI headless component library](https://www.bits-ui.com/docs/introduction))
+  - [ ] Button
 
 ## Developing
 
