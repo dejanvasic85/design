@@ -6,7 +6,7 @@ This is a fun project for learning how to create a design system using CSS and S
 
 - [x] CSS Reset
 - [x] Colours
-- [ ] Typography
+- [x] Typography
 - [ ] Layout and spacing
 - [ ] Forms
 - Components (using [Bits UI headless component library](https://www.bits-ui.com/docs/introduction))
