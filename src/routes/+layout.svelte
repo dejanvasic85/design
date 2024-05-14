@@ -3,10 +3,8 @@
 	import '../style.css';
 </script>
 
-<div>
-	<main>
-		<slot />
-	</main>
+<main>
+	<slot />
+</main>
 
-	<footer>Footer coming soon</footer>
-</div>
+<footer>Footer coming soon</footer>
