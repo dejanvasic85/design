@@ -67,7 +67,11 @@
 
 	/* Colour intentions */
 	--primary: var(--blue-500);
-	--text-color: var(--gray-900);
+	--text-colour: var(--gray-900);
+	--line-colour: var(--gray-300);
+
+	/* Styles */
+	--line: 2px solid var(--line-colour);
 
 	/* Fonts */
 	--heading-font: 'Libre Baskerville', serif;
@@ -77,6 +81,7 @@
 	--h3-font-size: 1.95em;
 	--h4-font-size: 1.56em;
 	--h5-font-size: 1.25em;
+	--text-small: 0.8em;
 }
 
 html {
@@ -88,7 +93,9 @@ body {
 	font-weight: 400;
 	line-height: 1.65;
 	background-color: var(--gray-200);
-	color: var(--text-color);
+	color: var(--text-colour);
+
+	padding-bottom: 300px; /* temporary */
 }
 
 p {
@@ -98,7 +105,7 @@ p {
 
 p a,
 blockquote a {
-	color: var(--text-color);
+	color: var(--text-colour);
 	text-decoration: none;
 	border-bottom: 3px solid var(--green-400);
 }
@@ -153,12 +160,34 @@ h5,
 }
 
 .text-caption {
-	font-size: 0.8em;
+	font-size: var(--text-small);
 }
 
 small,
 .text-small {
-	font-size: 0.8em;
+	font-size: var(--text-small);
 }
 
 /* End Typescale */
+
+/* Forms */
+
+label {
+	display: block;
+	font-size: var(--text-small);
+}
+
+input,
+textarea {
+	padding: 8px 8px;
+	border: var(--line);
+	border-radius: 4px;
+}
+
+select {
+	border: var(--line);
+}
+
+hr {
+	border: var(--line);
+}
