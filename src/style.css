@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
+	--white: #fff;
+	--black: #333;
+
 	/* Base colours */
 	--blue-100: #dfe5fd;
 	--blue-200: #c0cbfc;
@@ -89,7 +92,21 @@ body {
 }
 
 p {
-	font-size: 1em;
+	margin-bottom: 1.15rem;
+	max-width: 50em;
+}
+
+p a,
+blockquote a {
+	color: var(--text-color);
+	text-decoration: none;
+	border-bottom: 3px solid var(--green-400);
+}
+
+blockquote {
+	background-color: var(--white);
+	padding: 2em;
+	margin: 10px;
 }
 
 .dark {
