@@ -44,8 +44,8 @@
 
 <form>
 	<div>
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" />
+		<label for="name">Text:</label>
+		<input type="text" id="name" name="name" placeholder="Placeholder" />
 	</div>
 
 	<div>
@@ -54,12 +54,12 @@
 	</div>
 
 	<div>
-		<label for="number">Message:</label>
-		<textarea id="number" name="number"></textarea>
+		<label for="detail">Textarea:</label>
+		<textarea id="detail" name="detail">Default value</textarea>
 	</div>
 
 	<div>
-		<label for="sex">Sex:</label>
+		<label for="sex">Select:</label>
 		<select id="sex">
 			<option value="Male">Male</option>
 			<option value="Female">Female</option>
@@ -67,4 +67,8 @@
 	</div>
 
 	<button type="submit">Submit</button>
+	<button>Cancel</button>
+	<button disabled>Disabled</button>
+	<button>button with really long text</button>
+  <button>Button &xrarr;</button>
 </form>
