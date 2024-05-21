@@ -90,6 +90,10 @@
 	--level-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 	--level-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 	--level-4: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+	/* Positioning */
+	--container-padding: 2.5%;
+	--header-height: 3rem;
 }
 
 html {
@@ -104,6 +108,32 @@ body {
 	color: var(--text-colour);
 
 	padding-bottom: 300px; /* temporary */
+}
+
+header {
+	--header-background: var(--blue-800);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: var(--blue-800);
+	color: var(--white);
+	height: var(--header-height);
+	box-shadow: var(--level-2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 var(--container-padding);
+}
+
+header nav {
+	display: flex;
+	gap: 1rem;
+}
+
+header nav a {
+	color: var(--white);
+	text-decoration: none;
 }
 
 p {
@@ -245,8 +275,7 @@ button.small {
 }
 
 .layout {
-	margin: 0 auto;
-	width: 95%;
+	padding: calc(3rem + var(--header-height)) var(--container-padding);
 }
 
 .grid {
@@ -288,4 +317,9 @@ button.small {
 	.flex {
 		display: flex;
 	}
+}
+
+.fake-logo {
+	margin: 0;
+	font-size: var(--base-font-size);
 }
