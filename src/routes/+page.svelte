@@ -41,6 +41,17 @@
 	</ul>
 </div>
 
+
+<div class="card">
+	<h3>Card heading</h3>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+		laboris nisi ut aliquip ex ea commodo consequat.
+	</p>
+	<button>Button</button>
+</div>
+
 <hr />
 
 <form>
@@ -69,7 +80,7 @@
 
 	<div class="flex flex-start gap">
 		<button type="submit">Submit</button>
-		<button class="cancel">Cancel</button>
+		<button class="danger">Danger</button>
 		<button disabled>Disabled</button>
 		<button>button with really long text</button>
 		<button>Button &xrarr;</button>

@@ -15,3 +15,11 @@
 <main class="layout">
 	<slot />
 </main>
+
+<footer>
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+	</nav>
+</footer>

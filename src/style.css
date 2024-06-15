@@ -70,6 +70,11 @@
 	--danger: var(--red-500);
 	--text-colour: var(--gray-900);
 	--line-colour: var(--gray-400);
+	--body-background: var(--gray-100);
+	--card-bg: var(--white);
+	--header-background: var(--blue-800);
+	--footer-background: var(--blue-800);
+	--button-text-colour: var(--white);
 
 	/* Styles */
 	--line: 2px solid var(--line-colour);
@@ -94,6 +99,7 @@
 	/* Positioning */
 	--container-padding: 2.5%;
 	--header-height: 3rem;
+	--border-radius: 10px;
 }
 
 html {
@@ -104,19 +110,16 @@ body {
 	font-family: var(--body-font);
 	font-weight: 400;
 	line-height: 1.65;
-	background-color: var(--gray-100);
+	background-color: var(--body-background);
 	color: var(--text-colour);
-
-	padding-bottom: 300px; /* temporary */
 }
 
 header {
-	--header-background: var(--blue-800);
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
-	background-color: var(--blue-800);
+	background-color: var(--header-background);
 	color: var(--white);
 	height: var(--header-height);
 	box-shadow: var(--level-2);
@@ -136,6 +139,23 @@ header nav a {
 	text-decoration: none;
 }
 
+footer {
+	background-color: var(--footer-background);
+	color: var(--white);
+	padding: 1rem var(--container-padding);
+}
+
+footer nav {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+footer nav a {
+	color: var(--white);
+	text-decoration: none;
+}
+
 p {
 	margin-bottom: 1.15rem;
 	max-width: 50em;
@@ -149,15 +169,10 @@ blockquote a {
 }
 
 blockquote {
-	background-color: var(--white);
+	background-color: var(--card-bg);
 	padding: 2em;
 	margin: 10px;
 	box-shadow: var(--level-3);
-}
-
-.dark {
-	background-color: var(--gray-900);
-	color: var(--gray-100);
 }
 
 /* Typescale */
@@ -237,6 +252,7 @@ select {
 }
 
 hr {
+	margin: 1.5rem 0;
 	border-top: var(--line);
 }
 
@@ -244,7 +260,7 @@ button {
 	--button-colour: var(--green-300);
 
 	appearance: none;
-	color: var(--black);
+	color: var(--button-text-colour);
 	background-color: var(--button-colour);
 	border: none;
 	border-radius: 10px;
@@ -262,11 +278,11 @@ button[disabled] {
 	opacity: 0.4;
 }
 
-button.cancel {
+button.danger {
 	background-color: var(--red-300);
 }
 
-button.cancel:hover {
+button.danger:hover {
 	background-color: var(--red-400);
 }
 
@@ -288,6 +304,11 @@ button.small {
 	--grid-cols: 3;
 }
 
+.split {
+	display: grid;
+	grid-template-columns: 33% 67%;
+}
+
 .flex {
 	--justify-content: space-between;
 	display: block;
@@ -307,6 +328,11 @@ button.small {
 	gap: var(--gap);
 }
 
+.fake-logo {
+	margin: 0;
+	font-size: var(--base-font-size);
+}
+
 @media screen and (min-width: 768px) {
 	:root {
 		--base-font-size: 125%;
@@ -319,7 +345,26 @@ button.small {
 	}
 }
 
-.fake-logo {
-	margin: 0;
-	font-size: var(--base-font-size);
+.card {
+	padding: 2em;
+	background-color: var(--card-bg);
+	box-shadow: var(--level-3);
+	border-radius: var(--border-radius);
+}
+
+.card > *:first-child {
+	margin-top: 0;
+}
+
+.card > *:last-child {
+	margin-top: 0;
+}
+
+.dark {
+	--card-bg: var(--gray-800);
+	--body-background: var(--gray-900);
+	--text-colour: var(--white);
+	--header-background: var(--gray-800);
+	--footer-background: var(--gray-800);
+	--button-text-colour: var(--black);
 }
